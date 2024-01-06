@@ -1,0 +1,1 @@
+You will build an app that allows the user to generate a color. Color can be created by moving each slider and choosing the red, green, and blue values. 
