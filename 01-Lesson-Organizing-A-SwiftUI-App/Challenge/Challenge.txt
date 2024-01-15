@@ -1,0 +1,1 @@
+Initiate a new SwiftUI project and name it 'Color Picker'.
