@@ -30,57 +30,59 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-
 import SwiftUI
 
 struct ContentView: View {
-  @Environment(\.horizontalSizeClass) var horizontalSizeClass
-  @Environment(\.verticalSizeClass) var verticalSizeClass
-
-  @State private var redValue = 0.0
-  @State private var greenValue = 0.0
-  @State private var blueValue = 0.0
-  @State private var activeColor = Color.gray
-
-  var body: some View {
-    ScrollView {
-      if horizontalSizeClass == .compact && verticalSizeClass == .compact {
-        landscapeLayout
-      } else {
-        portraitLayout
-      }
+    @State private var redValue = 0.0
+    @State private var greenValue = 0.0
+    @State private var blueValue = 0.0
+    @State private var activeColor = Color.gray
+    
+    var body: some View {
+        VStack {
+            Text("Color Picker")
+                .font(.title)
+                .fontWeight(.semibold)
+            
+            RoundedRectangle(cornerRadius: 24.0)
+                .frame(width: 300, height: 250)
+                .foregroundStyle(activeColor)
+                .padding(.bottom, 24)
+            
+            Text("Red")
+            
+            HStack {
+                Slider(value: $redValue, in: 0...255)
+                    .tint(.red)
+                Text("\(Int(redValue.rounded()))")
+            }
+            
+            Text("Green")
+            
+            HStack {
+                Slider(value: $greenValue, in: 0...255)
+                    .tint(.green)
+                Text("\(Int(greenValue.rounded()))")
+            }
+            
+            Text("Blue")
+            
+            HStack {
+                Slider(value: $blueValue, in: 0...255)
+                    .tint(.blue)
+                Text("\(Int(blueValue.rounded()))")
+            }
+            
+            Button("Set color") {
+                activeColor = Color(red: redValue / 255.0, green: greenValue / 255.0, blue: blueValue / 255.0)
+            }
+            .buttonStyle(.borderedProminent)
+            .padding(16.0)
+        }
+        .padding()
     }
-  }
-
-  private var portraitLayout: some View {
-    VStack {
-      ColorPickerResultView(activeColor: $activeColor)
-        .frame(maxWidth: .infinity)
-      sliderSection
-    }
-    .padding()
-  }
-
-  private var landscapeLayout: some View {
-    HStack {
-      ColorPickerResultView(activeColor: $activeColor)
-        .frame(maxWidth: .infinity)
-      sliderSection
-    }
-    .padding()
-  }
-
-  private var sliderSection: some View {
-    VStack {
-      ColorSlidersView(redValue: $redValue, greenValue: $greenValue, blueValue: $blueValue)
-      SetColorButtonView(activeColor: $activeColor, action: setColor)
-    }
-  }
-
-  private func setColor() {
-    activeColor = Color(red: redValue / 255.0, green: greenValue / 255.0, blue: blueValue / 255.0)
-  }
 }
+
 #Preview {
-  ContentView()
+    ContentView()
 }

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FBB47DD2B49817A007E0EEB /* ColorPickerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB47DC2B49817A007E0EEB /* ColorPickerResultView.swift */; };
-		5FBB47DF2B4981A5007E0EEB /* ColorSlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB47DE2B4981A5007E0EEB /* ColorSlidersView.swift */; };
-		5FBB47E12B498229007E0EEB /* SetColorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB47E02B498229007E0EEB /* SetColorButtonView.swift */; };
 		5FBE732F2B480878007F9BDF /* ColorPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBE732E2B480878007F9BDF /* ColorPickerApp.swift */; };
 		5FBE73312B480878007F9BDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBE73302B480878007F9BDF /* ContentView.swift */; };
 		5FBE73332B48087A007F9BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBE73322B48087A007F9BDF /* Assets.xcassets */; };
@@ -17,9 +14,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5FBB47DC2B49817A007E0EEB /* ColorPickerResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerResultView.swift; sourceTree = "<group>"; };
-		5FBB47DE2B4981A5007E0EEB /* ColorSlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlidersView.swift; sourceTree = "<group>"; };
-		5FBB47E02B498229007E0EEB /* SetColorButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetColorButtonView.swift; sourceTree = "<group>"; };
 		5FBE732B2B480878007F9BDF /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBE732E2B480878007F9BDF /* ColorPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerApp.swift; sourceTree = "<group>"; };
 		5FBE73302B480878007F9BDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,9 +53,6 @@
 			children = (
 				5FBE732E2B480878007F9BDF /* ColorPickerApp.swift */,
 				5FBE73302B480878007F9BDF /* ContentView.swift */,
-				5FBB47DE2B4981A5007E0EEB /* ColorSlidersView.swift */,
-				5FBB47DC2B49817A007E0EEB /* ColorPickerResultView.swift */,
-				5FBB47E02B498229007E0EEB /* SetColorButtonView.swift */,
 				5FBE73322B48087A007F9BDF /* Assets.xcassets */,
 				5FBE73342B48087A007F9BDF /* Preview Content */,
 			);
@@ -146,9 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FBB47DD2B49817A007E0EEB /* ColorPickerResultView.swift in Sources */,
-				5FBB47DF2B4981A5007E0EEB /* ColorSlidersView.swift in Sources */,
-				5FBB47E12B498229007E0EEB /* SetColorButtonView.swift in Sources */,
 				5FBE73312B480878007F9BDF /* ContentView.swift in Sources */,
 				5FBE732F2B480878007F9BDF /* ColorPickerApp.swift in Sources */,
 			);
