@@ -30,23 +30,13 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack { // A vertical container view
-            Image("myImage")
-                .resizable()
-            Text("Welcome to My App")
-                .font(.largeTitle)
-            Button("Next") {
-                // Action to perform
-            }
-        }
+@main
+struct ColorPickerApp: App {
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
-}
-
-#Preview {
-    ContentView()
+  }
 }

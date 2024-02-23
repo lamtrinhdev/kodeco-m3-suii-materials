@@ -34,17 +34,19 @@
 import SwiftUI
 
 struct ContentView: View {
-  var body: some View {
-    VStack {
-      Image(systemName: "globe")
-        .imageScale(.large)
-        .foregroundStyle(.tint)
-      Text("Hello, world!")
+    var body: some View {
+        VStack { // A vertical container view
+            Image("myImage")
+                .resizable()
+            Text("Welcome to My App")
+                .font(.largeTitle)
+            Button("Next") {
+                // Action to perform
+            }
+        }
     }
-    .padding()
-  }
 }
 
 #Preview {
-  ContentView()
+    ContentView()
 }
