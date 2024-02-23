@@ -40,18 +40,5 @@ struct Color_PickerApp: App {
     WindowGroup {
       ContentView()
     }
-    .onChange(of: scenePhase, { oldPhase, newPhase in
-      switch newPhase {
-      case .background:
-        print("Entering Background")
-      case .active:
-        print("Becoming Active")
-      case .inactive:
-        print("Becoming inactive")
-      @unknown default:
-        print("Unknown")
-      }
-    })
-
   }
 }
