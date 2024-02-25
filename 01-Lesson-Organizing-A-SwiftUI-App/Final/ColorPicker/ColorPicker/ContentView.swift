@@ -36,7 +36,7 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     VStack { // A vertical container view
-      Image("myImage")
+      Image("MyCat")
         .resizable()
       Text("Welcome to My App")
         .font(.largeTitle)
