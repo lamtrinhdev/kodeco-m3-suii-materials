@@ -34,21 +34,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var selectedNumber: Double = 100
-    
-    var body: some View {
-        VStack { // A vertical container view
-            Text(selectedNumber, format: .number.precision(.fractionLength(0)))
-                .bold()
-                .font(.title)
-                .foregroundStyle(.orange)
-            Slider(value: $selectedNumber, in: 0...255)
-                .tint(.green)
-                .padding(16.0)
-        }
+  var body: some View {
+    VStack { // A vertical container view
+      Image("MyCat")
+        .resizable()
+      Text("Welcome to My App")
+        .font(.largeTitle)
+      Button("Next") {
+        // Action to perform
+      }
     }
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }

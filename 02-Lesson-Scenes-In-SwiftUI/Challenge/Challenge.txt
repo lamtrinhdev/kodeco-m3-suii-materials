@@ -1,3 +1,0 @@
-Challenge 1: Demonstrate the usage of the `DocumentGroup` in a demo.
-
-Challenge 2: Understand the 'Scene Phase' concept.
