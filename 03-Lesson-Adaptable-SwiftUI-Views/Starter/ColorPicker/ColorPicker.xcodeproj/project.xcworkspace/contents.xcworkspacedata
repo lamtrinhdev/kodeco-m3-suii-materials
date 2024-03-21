@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/prethep/Documents/GitHub/m3-suii-materials/01-Lesson-Organizing-A-SwiftUI-App/Final/Color_Picker/ColorPicker.xcodeproj">
+      location = "self:/Users/prethep/Documents/GitHub/m3-suii-materials/02-Lesson-Scenes-In-SwiftUI/Starter/Color_Picker/ColorPicker.xcodeproj">
    </FileRef>
 </Workspace>
