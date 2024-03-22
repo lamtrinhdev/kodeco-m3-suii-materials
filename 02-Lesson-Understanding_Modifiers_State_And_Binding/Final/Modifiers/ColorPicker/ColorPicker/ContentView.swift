@@ -34,32 +34,32 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack { // A vertical container view
-            Image("MyCat")
-                .resizable()
-                .frame(width: 300, height: 250)
-            Text("Select Cat Age")
-                .font(.largeTitle)
-                .padding()
-                .background(.green)
-                .foregroundStyle(.white)
-            Text("100")
-                .bold()
-                .font(.title)
-                .foregroundStyle(.orange)
-            Slider(value: .constant(100), in: 0...255)
-                .tint(.green)
-                .padding()
-            Button("Next") {
-                // Action to perform
-            }
-            .buttonStyle(.borderedProminent)
-            .padding()
-        }
+  var body: some View {
+    VStack { // A vertical container view
+      Image("MyCat")
+        .resizable()
+        .frame(width: 300, height: 250)
+      Text("Select Cat Age")
+        .font(.largeTitle)
+        .padding()
+        .background(.green)
+        .foregroundStyle(.white)
+      Text("100")
+        .bold()
+        .font(.title)
+        .foregroundStyle(.orange)
+      Slider(value: .constant(100), in: 0...255)
+        .tint(.green)
+        .padding()
+      Button("Next") {
+        // Action to perform
+      }
+      .buttonStyle(.borderedProminent)
+      .padding()
     }
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }
